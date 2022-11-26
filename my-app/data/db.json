@@ -1,20 +1,20 @@
 {
   "categoryList": [
-    "teacher",
-    "doctor",
-    "fireman",
-    "engineer",
-    "sportsman",
-    "barber",
-    "painter",
-    "musician",
-    "gardener",
-    "pilot",
-    "dantist",
-    "fisherman",
-    "bisnesman",
-    "manager",
-    "seller",
-    "soldier"
+    { "name": "teacher" },
+    { "name": "doctor" },
+    { "name": "fireman" },
+    { "name": "engineer" },
+    { "name": "sportsman" },
+    { "name": "barber" },
+    { "name": "painter" },
+    { "name": "musician" },
+    { "name": "gardener" },
+    { "name": "pilot" },
+    { "name": "dantist" },
+    { "name": "fisherman" },
+    { "name": "bisnesman" },
+    { "name": "manager" },
+    { "name": "seller" },
+    { "name": "soldier" }
   ]
 }

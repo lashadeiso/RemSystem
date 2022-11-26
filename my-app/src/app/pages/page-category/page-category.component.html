@@ -7,11 +7,12 @@
     <app-filter-contains
       (filterValueEmmitter)="onInputValue($event)"
     ></app-filter-contains>
+
     <div
       class="category-item"
       *ngFor="let item of pageSlice | filter: inputValue"
     >
-      <span>{{ item | titlecase }}</span>
+      <span>{{ item.name | titlecase }}</span>
       <div class="category-item-buttons">
         <button class="btn btn-warning">Update</button>
         <button class="btn btn-danger">Delete</button>
@@ -20,6 +21,7 @@
   </div>
 
   <mat-paginator
+    class="pagination"
     [length]="categoryList.length"
     [pageSize]="4"
     [pageSizeOptions]="[4, 8, 12, 16]"

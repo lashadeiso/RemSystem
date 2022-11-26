@@ -5,6 +5,7 @@ import { PageStatusComponent } from './page-status/page-status.component';
 import { PageUsersListComponent } from './page-users-list/page-users-list.component';
 import { PageUserDetailsComponent } from './page-user-details/page-user-details.component';
 import { SharedModule } from '../shared/shared.module';
+import { FormsModule } from '@angular/forms';
 
 const Pages = [
   PageCategoryComponent,
@@ -20,7 +21,7 @@ const Pages = [
     PageUsersListComponent,
     PageUserDetailsComponent,
   ],
-  imports: [CommonModule, SharedModule],
+  imports: [CommonModule, SharedModule, FormsModule],
   exports: [...Pages],
 })
 export class PagesModule {}
