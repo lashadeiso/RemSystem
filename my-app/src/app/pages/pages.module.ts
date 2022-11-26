@@ -10,7 +10,7 @@ import { PageUserDetailsComponent } from './page-user-details/page-user-details.
     PageCategoryComponent,
     PageStatusComponent,
     PageUsersListComponent,
-    PageUserDetailsComponent
+    PageUserDetailsComponent,
   ],
   imports: [CommonModule],
 })
