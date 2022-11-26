@@ -1,0 +1,20 @@
+{
+  "categoryList": [
+    "teacher",
+    "doctor",
+    "fireman",
+    "engineer",
+    "sportsman",
+    "barber",
+    "painter",
+    "musician",
+    "gardener",
+    "pilot",
+    "dantist",
+    "fisherman",
+    "bisnesman",
+    "manager",
+    "seller",
+    "soldier"
+  ]
+}

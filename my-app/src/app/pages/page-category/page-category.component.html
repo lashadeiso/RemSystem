@@ -1,1 +1,29 @@
-<p>page-category works!</p>
+<section class="categorys">
+  <header>
+    <h1 class="title">Category</h1>
+  </header>
+
+  <div class="container categorys-wrapper">
+    <app-filter-contains
+      (filterValueEmmitter)="onInputValue($event)"
+    ></app-filter-contains>
+    <div
+      class="category-item"
+      *ngFor="let item of pageSlice | filter: inputValue"
+    >
+      <span>{{ item | titlecase }}</span>
+      <div class="category-item-buttons">
+        <button class="btn btn-warning">Update</button>
+        <button class="btn btn-danger">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <mat-paginator
+    [length]="categoryList.length"
+    [pageSize]="4"
+    [pageSizeOptions]="[4, 8, 12, 16]"
+    (page)="onPageChange($event)"
+  >
+  </mat-paginator>
+</section>

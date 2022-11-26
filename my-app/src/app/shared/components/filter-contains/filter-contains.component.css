@@ -1,0 +1,24 @@
+.category-filter {
+  height: 5vh;
+  width: 50vw;
+  margin: 0 auto;
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+}
+.category-filter span {
+  font-size: 2.5vh;
+}
+.input-filter {
+  height: 100%;
+  width: 50%;
+  border: 1px solid rgb(195, 191, 191);
+  border-radius: 5px;
+  font-size: 3vh;
+  padding-left: 15px;
+  font-weight: 400;
+}
+.input-filter:focus {
+  outline: none;
+}
