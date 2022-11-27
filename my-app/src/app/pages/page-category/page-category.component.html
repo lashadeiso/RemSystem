@@ -1,31 +1,32 @@
 <section class="categorys">
-  <header>
-    <h1 class="title">Category</h1>
-  </header>
-
-  <div class="container categorys-wrapper">
+  <div class="filter-contains">
     <app-filter-contains
       (filterValueEmmitter)="onInputValue($event)"
     ></app-filter-contains>
+    <button type="button" class="btn btn-success" (click)="onShowMoadl()">
+      Add Category
+    </button>
+  </div>
 
+  <div class="container categorys-wrapper">
     <div
       class="category-item"
       *ngFor="let item of pageSlice | filter: inputValue"
     >
-      <span>{{ item.name | titlecase }}</span>
+      <span>{{ item.categoryName | titlecase }}</span>
       <div class="category-item-buttons">
         <button class="btn btn-warning">Update</button>
         <button class="btn btn-danger">Delete</button>
       </div>
     </div>
   </div>
-
-  <mat-paginator
-    class="pagination"
-    [length]="categoryList.length"
-    [pageSize]="4"
-    [pageSizeOptions]="[4, 8, 12, 16]"
-    (page)="onPageChange($event)"
-  >
-  </mat-paginator>
+  <app-pagination
+    [itemsList]="categoriesList"
+    (pageSliceEmitter)="onPageSlice($event)"
+  ></app-pagination>
 </section>
+
+<app-page-category-modal
+  [showModal]="showModal"
+  (showModalEmitter)="onShowModalSubscriber($event)"
+></app-page-category-modal>

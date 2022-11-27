@@ -8,16 +8,22 @@ import { FilterContainsComponent } from './components/filter-contains/filter-con
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { PaginationComponent } from './components/pagination/pagination.component';
 
 const Shared = [MatPaginatorModule, Ng2SearchPipeModule];
 
 @NgModule({
-  declarations: [NavigationComponent, FilterContainsComponent],
+  declarations: [
+    NavigationComponent,
+    FilterContainsComponent,
+    PaginationComponent,
+  ],
   imports: [CommonModule, AppRoutingModule, FormsModule, [...Shared]],
   exports: [
     NavigationComponent,
     HttpClientModule,
     FilterContainsComponent,
+    PaginationComponent,
     [...Shared],
   ],
 })

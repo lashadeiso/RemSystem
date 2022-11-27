@@ -6,9 +6,6 @@
   flex-direction: column;
   justify-content: space-around;
 }
-header {
-  margin-left: 10vw;
-}
 
 .categorys-wrapper {
   height: 70vh;
@@ -17,6 +14,18 @@ header {
   justify-content: flex-start !important;
   gap: 1vh;
   overflow-y: scroll;
+}
+.filter-contains {
+  width: 50vw;
+  height: 5vh;
+  margin: 5vh auto;
+  margin-bottom: 5vh;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-success {
+  width: 10vw !important;
+  font-size: 2vh !important;
 }
 .category-item {
   min-height: 11vh;

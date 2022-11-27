@@ -1,0 +1,52 @@
+<!-- Modal -->
+<div
+  [ngClass]="{ showmodal: showModal }"
+  class="modal fade"
+  id="staticBackdrop"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Add Category</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+          (click)="onShowMoadl()"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <input
+          #addCategoryValue
+          type="text"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Enter here"
+        />
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          (click)="onShowMoadl()"
+          data-bs-dismiss="modal"
+        >
+          Close
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          (click)="onAddCategory(addCategoryValue)"
+        >
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

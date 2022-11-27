@@ -1,20 +1,46 @@
 {
-  "categoryList": [
-    { "name": "teacher" },
-    { "name": "doctor" },
-    { "name": "fireman" },
-    { "name": "engineer" },
-    { "name": "sportsman" },
-    { "name": "barber" },
-    { "name": "painter" },
-    { "name": "musician" },
-    { "name": "gardener" },
-    { "name": "pilot" },
-    { "name": "dantist" },
-    { "name": "fisherman" },
-    { "name": "bisnesman" },
-    { "name": "manager" },
-    { "name": "seller" },
-    { "name": "soldier" }
+  "users": [
+    {
+      "id": 1,
+      "eMail": "aa@gmail.com",
+      "privateNumber": 23434234324,
+      "firstName": "lasha",
+      "lastName": "deisadze",
+      "date": "28/02/1990",
+      "status": "doctor status",
+      "category": "doctor"
+    }
+  ],
+  "categories": [
+    {
+      "categoryName": "asdsa",
+      "id": 1
+    },
+    {
+      "categoryName": "asdsad",
+      "id": 2
+    },
+    {
+      "categoryName": "eee",
+      "id": 3
+    },
+    {
+      "categoryName": "ttt",
+      "id": 4
+    },
+    {
+      "categoryName": "2222",
+      "id": 5
+    },
+    {
+      "categoryName": "444",
+      "id": 6
+    }
+  ],
+  "statuses": [
+    {
+      "id": 1,
+      "statusName": "doctor status"
+    }
   ]
 }

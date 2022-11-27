@@ -6,7 +6,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./filter-contains.component.css'],
 })
 export class FilterContainsComponent implements OnInit {
-  inputValue: string = '';
+  inputValue!: string;
   @Output() filterValueEmmitter = new EventEmitter<string>();
   ngOnInit() {}
   onFilterValueEmit() {
