@@ -4,6 +4,16 @@ import { PageCategoryComponent } from './page-category/page-category.component';
 import { PageStatusComponent } from './page-status/page-status.component';
 import { PageUsersListComponent } from './page-users-list/page-users-list.component';
 import { PageUserDetailsComponent } from './page-user-details/page-user-details.component';
+import { SharedModule } from '../shared/shared.module';
+import { FormsModule } from '@angular/forms';
+import { PageCategoryModalComponent } from './page-category/page-category-modal/page-category-modal.component';
+
+const Pages = [
+  PageCategoryComponent,
+  PageStatusComponent,
+  PageUsersListComponent,
+  PageUserDetailsComponent,
+];
 
 @NgModule({
   declarations: [
@@ -11,7 +21,9 @@ import { PageUserDetailsComponent } from './page-user-details/page-user-details.
     PageStatusComponent,
     PageUsersListComponent,
     PageUserDetailsComponent,
+    PageCategoryModalComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, SharedModule, FormsModule],
+  exports: [...Pages],
 })
 export class PagesModule {}

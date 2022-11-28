@@ -1,0 +1,38 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "eMail": "aa@gmail.com",
+      "privateNumber": 23434234324,
+      "firstName": "lasha",
+      "lastName": "deisadze",
+      "date": "28/02/1990",
+      "status": "doctor status",
+      "category": "doctor"
+    }
+  ],
+  "categories": [
+    {
+      "id": 9,
+      "categoryName": "juba"
+    },
+    {
+      "id": 10,
+      "categoryName": "irakli"
+    },
+    {
+      "id": 12,
+      "categoryName": "sashiko"
+    },
+    {
+      "id": 13,
+      "categoryName": "lela"
+    }
+  ],
+  "statuses": [
+    {
+      "id": 1,
+      "statusName": "doctor status"
+    }
+  ]
+}
