@@ -10,6 +10,8 @@ export class PaginationComponent implements OnInit {
   @Input() itemsList: any[] = [];
   pageSlice: any[] = [];
   @Output() pageSliceEmitter = new EventEmitter<any>();
+  @Output() startIndexEmitter = new EventEmitter<any>();
+  @Output() endIndexEmitter = new EventEmitter<any>();
 
   constructor() {}
   ngOnInit(): void {
@@ -25,5 +27,7 @@ export class PaginationComponent implements OnInit {
     this.pageSlice = this.itemsList.slice(startIndex, endIndex);
 
     this.pageSliceEmitter.emit(this.pageSlice);
+    this.startIndexEmitter.emit(startIndex);
+    this.endIndexEmitter.emit(endIndex);
   }
 }

@@ -13,28 +13,20 @@
   ],
   "categories": [
     {
-      "categoryName": "asdsa",
-      "id": 1
+      "id": 9,
+      "categoryName": "juba"
     },
     {
-      "categoryName": "asdsad",
-      "id": 2
+      "id": 10,
+      "categoryName": "irakli"
     },
     {
-      "categoryName": "eee",
-      "id": 3
+      "id": 12,
+      "categoryName": "sashiko"
     },
     {
-      "categoryName": "ttt",
-      "id": 4
-    },
-    {
-      "categoryName": "2222",
-      "id": 5
-    },
-    {
-      "categoryName": "444",
-      "id": 6
+      "id": 13,
+      "categoryName": "lela"
     }
   ],
   "statuses": [

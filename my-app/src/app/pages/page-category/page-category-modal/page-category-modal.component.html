@@ -12,7 +12,9 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">Add Category</h1>
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">
+          {{ clickUpdateBTN ? "Update Category" : "Add Category" }}
+        </h1>
         <button
           type="button"
           class="btn-close"
@@ -28,6 +30,7 @@
           class="form-control"
           id="exampleFormControlInput1"
           placeholder="Enter here"
+          [value]="getInputData()"
         />
       </div>
       <div class="modal-footer">
@@ -42,9 +45,13 @@
         <button
           type="button"
           class="btn btn-primary"
-          (click)="onAddCategory(addCategoryValue)"
+          (click)="
+            clickUpdateBTN
+              ? onUpdateCategory(addCategoryValue)
+              : onAddCategory(addCategoryValue)
+          "
         >
-          Save
+          {{ clickUpdateBTN ? "Save" : "Add" }}
         </button>
       </div>
     </div>
