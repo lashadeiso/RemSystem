@@ -10,9 +10,9 @@ import { Category } from '../../models/category.model';
 export class PaginationComponent implements OnInit {
   @Input() itemsList: Category[] = [];
   pageSlice: Category[] = [];
-  @Output() startIndexEmitter = new EventEmitter<any>();
-  @Output() endIndexEmitter = new EventEmitter<any>();
-  @Output() pageSliceEmitter = new EventEmitter<any>();
+  @Output() startIndexEmitter = new EventEmitter<number>();
+  @Output() endIndexEmitter = new EventEmitter<number>();
+  @Output() pageSliceEmitter = new EventEmitter<Category[]>();
 
   constructor() {}
   ngOnInit(): void {

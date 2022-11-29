@@ -13,106 +13,52 @@
   ],
   "categories": [
     {
-      "id": 5,
-      "categoryName": "vvv"
+      "categoryName": "lasha",
+      "id": 1
     },
     {
-<<<<<<< Updated upstream
-      "id": 6,
-      "categoryName": "asdasd"
-=======
-      "id": 10,
-      "categoryName": "i234324"
->>>>>>> Stashed changes
+      "categoryName": "juba",
+      "id": 2
     },
     {
-      "categoryName": "babu",
+      "categoryName": "rezo",
+      "id": 3
+    },
+    {
+      "categoryName": "kote",
+      "id": 4
+    },
+    {
+      "categoryName": "vato",
+      "id": 5
+    },
+    {
+      "categoryName": "dato",
+      "id": 6
+    },
+    {
+      "categoryName": "nika",
+      "id": 7
+    },
+    {
+      "categoryName": "kako",
       "id": 8
     },
     {
-<<<<<<< Updated upstream
-      "categoryName": "vvv",
+      "categoryName": "lika",
       "id": 9
     },
     {
-      "categoryName": "444",
+      "categoryName": "babu",
       "id": 10
     },
     {
-      "categoryName": "asd",
+      "categoryName": "vera",
+      "id": 11
+    },
+    {
+      "categoryName": "nukri",
       "id": 12
-    },
-    {
-      "categoryName": "asdas",
-      "id": 14
-    },
-    {
-      "categoryName": "asdsad",
-      "id": 15
-    },
-    {
-      "categoryName": "asdsad",
-      "id": 16
-    },
-    {
-      "categoryName": "asdasd",
-      "id": 17
-    },
-    {
-      "categoryName": "asd",
-      "id": 18
-    },
-    {
-      "categoryName": "sdfds",
-      "id": 20
-    },
-    {
-      "categoryName": "sdf",
-      "id": 21
-    },
-    {
-      "categoryName": "df",
-      "id": 22
-    },
-    {
-      "id": 24,
-      "categoryName": "bbb"
-    },
-    {
-      "id": 25,
-      "categoryName": "555"
-    },
-    {
-      "categoryName": "vvv",
-      "id": 26
-    },
-    {
-      "id": 29,
-      "categoryName": "lasha"
-    },
-    {
-      "categoryName": "ასდ",
-      "id": 30
-    },
-    {
-      "id": 31,
-      "categoryName": "vvv"
-    },
-    {
-      "categoryName": "bbb",
-      "id": 34
-=======
-      "id": 13,
-      "categoryName": "lela"
-    },
-    {
-      "categoryName": "valiko",
-      "id": 14
-    },
-    {
-      "categoryName": "wqewqe",
-      "id": 15
->>>>>>> Stashed changes
     }
   ],
   "statuses": [
