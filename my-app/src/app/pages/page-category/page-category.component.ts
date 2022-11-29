@@ -18,15 +18,18 @@ export class PageCategoryComponent implements OnInit, OnDestroy {
   clickUpdateBTN: boolean = false;
   updateValue!: string;
   currentUpdateItemId!: number;
-  paginationStartIndex: number = 0;
-  paginationEndIndex: number = 0;
+  startIndex = 0;
+  endIndex = 4;
 
   constructor(private http: HttpService) {}
   ngOnInit() {
     this.http.getAllCategory().subscribe((res) => {
       if (res) {
         this.categoriesList = res;
-        this.pageSlice = this.categoriesList.slice(0, 4);
+        this.pageSlice = this.categoriesList.slice(
+          this.startIndex,
+          this.endIndex
+        );
       }
     });
 
@@ -34,8 +37,8 @@ export class PageCategoryComponent implements OnInit, OnDestroy {
       if (res) {
         this.categoriesList = res;
         this.pageSlice = this.categoriesList.slice(
-          this.paginationStartIndex,
-          this.paginationEndIndex
+          this.startIndex,
+          this.startIndex + this.endIndex
         );
       }
     });
@@ -61,10 +64,7 @@ export class PageCategoryComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.itemSubscription$.unsubscribe();
   }
-  onPageSlice(event: any) {
-    this.pageSlice = event;
-    console.log(this.pageSlice);
-  }
+
   onDeleteCategory(id: number) {
     this.http.deleteCAtegory(id).subscribe((res) => {
       if (res) {
@@ -79,10 +79,13 @@ export class PageCategoryComponent implements OnInit, OnDestroy {
     this.currentUpdateItemId = item.id;
   }
 
-  onStartIndex(startIndex: number) {
-    this.paginationStartIndex = startIndex;
+  onStartIndexEmitter(event: number) {
+    this.startIndex = event;
   }
-  onEndtIndex(endtIndex: number) {
-    this.paginationEndIndex = endtIndex;
+  onEndIndexEmitter(event: number) {
+    this.endIndex = event;
+  }
+  onPageSliceEmitter(event: Category[]) {
+    this.pageSlice = event;
   }
 }

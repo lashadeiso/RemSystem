@@ -9,9 +9,9 @@ import { PageEvent } from '@angular/material/paginator';
 export class PaginationComponent implements OnInit {
   @Input() itemsList: any[] = [];
   pageSlice: any[] = [];
-  @Output() pageSliceEmitter = new EventEmitter<any>();
   @Output() startIndexEmitter = new EventEmitter<any>();
   @Output() endIndexEmitter = new EventEmitter<any>();
+  @Output() pageSliceEmitter = new EventEmitter<any>();
 
   constructor() {}
   ngOnInit(): void {
@@ -25,9 +25,8 @@ export class PaginationComponent implements OnInit {
       endIndex = this.itemsList.length;
     }
     this.pageSlice = this.itemsList.slice(startIndex, endIndex);
-
-    this.pageSliceEmitter.emit(this.pageSlice);
     this.startIndexEmitter.emit(startIndex);
     this.endIndexEmitter.emit(endIndex);
+    this.pageSliceEmitter.emit(this.pageSlice);
   }
 }
