@@ -26,9 +26,9 @@
   </div>
   <app-pagination
     [itemsList]="categoriesList"
-    (pageSliceEmitter)="onPageSlice($event)"
-    (startIndexEmitter)="onStartIndex($event)"
-    (endIndexEmitter)="onEndtIndex($event)"
+    (startIndexEmitter)="onStartIndexEmitter($event)"
+    (endIndexEmitter)="onEndIndexEmitter($event)"
+    (pageSliceEmitter)="onPageSliceEmitter($event)"
   ></app-pagination>
 </section>
 

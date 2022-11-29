@@ -25,6 +25,7 @@ export class HttpService {
   }
 
   addCategory(categoryName: string): void {
+    console.log(this.categoryList);
     this.http
       .post(`${environment.baseUrl}/categories`, { categoryName })
       .pipe(
