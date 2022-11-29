@@ -13,24 +13,12 @@
   ],
   "categories": [
     {
-      "categoryName": "shota",
-      "id": 3
+      "id": 5,
+      "categoryName": "vvv"
     },
     {
-      "categoryName": "nodari",
-      "id": 4
-    },
-    {
-      "categoryName": "vato",
-      "id": 5
-    },
-    {
-      "categoryName": "kako",
-      "id": 6
-    },
-    {
-      "categoryName": "mama",
-      "id": 7
+      "id": 6,
+      "categoryName": "asdasd"
     },
     {
       "categoryName": "babu",
@@ -45,16 +33,8 @@
       "id": 10
     },
     {
-      "categoryName": "444",
-      "id": 11
-    },
-    {
       "categoryName": "asd",
       "id": 12
-    },
-    {
-      "categoryName": "asd",
-      "id": 13
     },
     {
       "categoryName": "asdas",
@@ -78,10 +58,6 @@
     },
     {
       "categoryName": "sdfds",
-      "id": 19
-    },
-    {
-      "categoryName": "sdfds",
       "id": 20
     },
     {
@@ -93,20 +69,32 @@
       "id": 22
     },
     {
-      "id": 23,
-      "categoryName": "555"
-    },
-    {
       "id": 24,
       "categoryName": "bbb"
     },
     {
-      "categoryName": "444",
-      "id": 25
+      "id": 25,
+      "categoryName": "555"
     },
     {
       "categoryName": "vvv",
       "id": 26
+    },
+    {
+      "id": 29,
+      "categoryName": "lasha"
+    },
+    {
+      "categoryName": "ასდ",
+      "id": 30
+    },
+    {
+      "id": 31,
+      "categoryName": "vvv"
+    },
+    {
+      "categoryName": "bbb",
+      "id": 34
     }
   ],
   "statuses": [

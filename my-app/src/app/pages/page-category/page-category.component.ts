@@ -79,6 +79,7 @@ export class PageCategoryComponent implements OnInit, OnDestroy {
     this.currentUpdateItemId = item.id;
   }
 
+  //--ემიტერები
   onStartIndexEmitter(event: number) {
     this.startIndex = event;
   }

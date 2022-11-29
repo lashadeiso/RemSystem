@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { PageEvent } from '@angular/material/paginator';
+import { Category } from '../../models/category.model';
 
 @Component({
   selector: 'app-pagination',
@@ -7,8 +8,8 @@ import { PageEvent } from '@angular/material/paginator';
   styleUrls: ['./pagination.component.css'],
 })
 export class PaginationComponent implements OnInit {
-  @Input() itemsList: any[] = [];
-  pageSlice: any[] = [];
+  @Input() itemsList: Category[] = [];
+  pageSlice: Category[] = [];
   @Output() startIndexEmitter = new EventEmitter<any>();
   @Output() endIndexEmitter = new EventEmitter<any>();
   @Output() pageSliceEmitter = new EventEmitter<any>();
@@ -25,6 +26,8 @@ export class PaginationComponent implements OnInit {
       endIndex = this.itemsList.length;
     }
     this.pageSlice = this.itemsList.slice(startIndex, endIndex);
+
+    //--ემიტერები
     this.startIndexEmitter.emit(startIndex);
     this.endIndexEmitter.emit(endIndex);
     this.pageSliceEmitter.emit(this.pageSlice);

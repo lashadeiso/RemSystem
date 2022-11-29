@@ -10,7 +10,7 @@ import Swal from 'sweetalert2';
 export class PageCategoryModalComponent {
   @Input() showModal!: boolean;
   @Output() showModalEmitter = new EventEmitter<boolean>();
-  @Input() clickUpdateButton = false;
+  @Input() clickUpdateButton: boolean = false;
   @Input() clickUpdateBTN: boolean = false;
   @Input() updateValue!: string;
   @Input() currentUpdateItemId!: number;
