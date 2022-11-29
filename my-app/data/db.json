@@ -17,14 +17,20 @@
       "categoryName": "vvv"
     },
     {
+<<<<<<< Updated upstream
       "id": 6,
       "categoryName": "asdasd"
+=======
+      "id": 10,
+      "categoryName": "i234324"
+>>>>>>> Stashed changes
     },
     {
       "categoryName": "babu",
       "id": 8
     },
     {
+<<<<<<< Updated upstream
       "categoryName": "vvv",
       "id": 9
     },
@@ -95,6 +101,18 @@
     {
       "categoryName": "bbb",
       "id": 34
+=======
+      "id": 13,
+      "categoryName": "lela"
+    },
+    {
+      "categoryName": "valiko",
+      "id": 14
+    },
+    {
+      "categoryName": "wqewqe",
+      "id": 15
+>>>>>>> Stashed changes
     }
   ],
   "statuses": [
