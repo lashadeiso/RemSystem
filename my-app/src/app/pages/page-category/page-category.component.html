@@ -13,7 +13,7 @@
       class="category-item"
       *ngFor="let item of pageSlice | filter: inputValue"
     >
-      <span>{{ item.categoryName | titlecase }}</span>
+      <span>{{ item.name | titlecase }}</span>
       <div class="category-item-buttons">
         <button class="btn btn-warning" (click)="onUpdateCategory(item)">
           Update

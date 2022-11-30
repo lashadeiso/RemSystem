@@ -1,6 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { PageEvent } from '@angular/material/paginator';
-import { Category } from '../../models/category.model';
 
 @Component({
   selector: 'app-pagination',
@@ -8,11 +7,11 @@ import { Category } from '../../models/category.model';
   styleUrls: ['./pagination.component.css'],
 })
 export class PaginationComponent implements OnInit {
-  @Input() itemsList: Category[] = [];
-  pageSlice: Category[] = [];
-  @Output() startIndexEmitter = new EventEmitter<any>();
-  @Output() endIndexEmitter = new EventEmitter<any>();
-  @Output() pageSliceEmitter = new EventEmitter<any>();
+  @Input() itemsList: any[] = [];
+  pageSlice: any[] = [];
+  @Output() startIndexEmitter = new EventEmitter<number>();
+  @Output() endIndexEmitter = new EventEmitter<number>();
+  @Output() pageSliceEmitter = new EventEmitter<any[]>();
 
   constructor() {}
   ngOnInit(): void {
