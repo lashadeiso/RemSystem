@@ -1,1 +1,41 @@
-<h1>Page status</h1>
+<section class="status">
+  <div class="filter-contains">
+    <app-filter-contains
+      (filterValueEmmitter)="onInputValue($event)"
+    ></app-filter-contains>
+    <button type="button" class="btn btn-success" (click)="onShowModal()">
+      Add Status
+    </button>
+  </div>
+
+  <div class="container status-wrapper">
+    <div
+      class="status-item"
+      *ngFor="let item of pageSlice | filter: inputValue"
+    >
+      <span>{{ item.name | titlecase }}</span>
+      <div class="status-item-buttons">
+        <button class="btn btn-warning" (click)="onUpdateStatus(item)">
+          Update
+        </button>
+        <button class="btn btn-danger" (click)="onDeleteStatus(item.id)">
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+  <app-pagination
+    [itemsList]="statusList"
+    (startIndexEmitter)="onStartIndexEmitter($event)"
+    (endIndexEmitter)="onEndIndexEmitter($event)"
+    (pageSliceEmitter)="onPageSliceEmitter($event)"
+  ></app-pagination>
+</section>
+
+<app-page-status-modal
+  [showModal]="showModal"
+  (showModalEmitter)="onShowModalSubscriber($event)"
+  [clickUpdateBTN]="clickUpdateBTN"
+  [updateValue]="updateValue"
+  [currentUpdateItemId]="currentUpdateItemId"
+></app-page-status-modal>

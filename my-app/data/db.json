@@ -1,70 +1,79 @@
 {
-  "users": [
-    {
-      "id": 1,
-      "eMail": "aa@gmail.com",
-      "privateNumber": 23434234324,
-      "firstName": "lasha",
-      "lastName": "deisadze",
-      "date": "28/02/1990",
-      "status": "doctor status",
-      "category": "doctor"
-    }
-  ],
+  "users": [],
   "categories": [
     {
-      "categoryName": "lasha",
-      "id": 1
+      "id": 1,
+      "name": "nukri"
     },
     {
-      "categoryName": "juba",
+      "name": "juba",
       "id": 2
     },
     {
-      "categoryName": "rezo",
-      "id": 3
+      "id": 3,
+      "name": "lasha"
     },
     {
-      "categoryName": "kote",
-      "id": 4
+      "id": 5,
+      "name": "vanichka"
     },
     {
-      "categoryName": "vato",
-      "id": 5
+      "id": 6,
+      "name": "tedo"
     },
     {
-      "categoryName": "dato",
-      "id": 6
-    },
-    {
-      "categoryName": "nika",
+      "name": "lika",
       "id": 7
     },
     {
-      "categoryName": "kako",
-      "id": 8
+      "id": 9,
+      "name": "babua"
     },
     {
-      "categoryName": "lika",
-      "id": 9
-    },
-    {
-      "categoryName": "babu",
+      "name": "kako",
       "id": 10
     },
     {
-      "categoryName": "vera",
+      "name": "lisaboni",
       "id": 11
     },
     {
-      "categoryName": "nukri",
+      "name": "tokio",
       "id": 12
     }
   ],
   "statuses": [
     {
-      "id": 1,
-      "statusName": "doctor status"
+      "name": "injineri",
+      "id": 3
+    },
+    {
+      "name": "kbilis eqimi",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "name": "mkurnali"
+    },
+    {
+      "name": "vachari",
+      "id": 6
+    },
+    {
+      "name": "leopardi",
+      "id": 7
+    },
+    {
+      "name": "kikoo",
+      "id": 8
+    },
+    {
+      "name": "vehsapi",
+      "id": 9
+    },
+    {
+      "name": "istagrami",
+      "id": 10
     }
   ]
 }

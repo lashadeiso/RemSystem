@@ -1,29 +1,31 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { HttpCategoryService } from 'src/app/shared/services/http-category.service';
+import { HttpStatusService } from 'src/app/shared/services/http-status.service';
 
 @Component({
-  selector: 'app-page-category-modal',
-  templateUrl: './page-category-modal.component.html',
-  styleUrls: ['./page-category-modal.component.css'],
+  selector: 'app-page-status-modal',
+  templateUrl: './page-status-modal.component.html',
+  styleUrls: ['./page-status-modal.component.css'],
 })
-export class PageCategoryModalComponent {
+export class PageStatusModalComponent {
   @Input() showModal!: boolean;
   @Output() showModalEmitter = new EventEmitter<boolean>();
   @Input() clickUpdateButton: boolean = false;
   @Input() clickUpdateBTN: boolean = false;
   @Input() updateValue!: string;
   @Input() currentUpdateItemId!: number;
-  constructor(private http: HttpCategoryService) {}
+
+  constructor(private http: HttpStatusService) {}
 
   onShowMoadl() {
     this.showModal = !this.showModal;
     this.showModalEmitter.emit(this.showModal);
   }
-  onAddCategory(addCategoryValue: HTMLInputElement) {
-    this.http.addCategory(addCategoryValue.value);
+  onAddStatus(addStatusValue: HTMLInputElement) {
+    console.log(333);
+    this.http.addStatus(addStatusValue.value);
     this.showModal = !this.showModal;
     this.showModalEmitter.emit(this.showModal);
-    addCategoryValue.value = '';
+    addStatusValue.value = '';
   }
   getInputData(): any {
     if (this.clickUpdateBTN) {
@@ -33,9 +35,9 @@ export class PageCategoryModalComponent {
     }
   }
 
-  onUpdateCategory(addCategoryValue: HTMLInputElement) {
+  onUpdateStatus(addStatusValue: HTMLInputElement) {
     this.http
-      .updateCategory(addCategoryValue.value, this.currentUpdateItemId)
+      .updateStatus(addStatusValue.value, this.currentUpdateItemId)
       .subscribe((res) => {
         if (res) {
           this.showModal = !this.showModal;

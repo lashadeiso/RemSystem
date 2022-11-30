@@ -1,8 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Category } from 'src/app/shared/models/category.model';
-import { HttpService } from 'src/app/shared/services/http.service';
-import Swal from 'sweetalert2';
+import { HttpCategoryService } from 'src/app/shared/services/http-category.service';
 
 @Component({
   selector: 'app-page-category',
@@ -21,7 +20,7 @@ export class PageCategoryComponent implements OnInit, OnDestroy {
   startIndex = 0;
   endIndex = 4;
 
-  constructor(private http: HttpService) {}
+  constructor(private http: HttpCategoryService) {}
   ngOnInit() {
     this.http.getAllCategory().subscribe((res) => {
       if (res) {
@@ -66,15 +65,11 @@ export class PageCategoryComponent implements OnInit, OnDestroy {
   }
 
   onDeleteCategory(id: number) {
-    this.http.deleteCAtegory(id).subscribe((res) => {
-      if (res) {
-        Swal.fire('Deleted successfully!');
-      }
-    });
+    this.http.deleteCategory(id).subscribe();
   }
   onUpdateCategory(item: Category) {
     this.onShowMoadl();
-    this.updateValue = item.categoryName;
+    this.updateValue = item.name;
     this.clickUpdateBTN = true;
     this.currentUpdateItemId = item.id;
   }
