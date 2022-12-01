@@ -1,0 +1,16 @@
+.users-list-wrapper {
+  width: 80vw;
+  height: 80vh;
+  margin: 5vh auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.users-list-filters {
+  height: 15vh;
+  display: flex;
+}
+.users-list-table {
+  height: 60vh;
+  overflow-y: scroll;
+}

@@ -8,6 +8,7 @@ import { SharedModule } from '../shared/shared.module';
 import { FormsModule } from '@angular/forms';
 import { PageCategoryModalComponent } from './page-category/page-category-modal/page-category-modal.component';
 import { PageStatusModalComponent } from './page-status/page-status-modal/page-status-modal.component';
+import { MatTableModule } from '@angular/material/table';
 
 const Pages = [
   PageCategoryComponent,
@@ -25,7 +26,7 @@ const Pages = [
     PageCategoryModalComponent,
     PageStatusModalComponent,
   ],
-  imports: [CommonModule, SharedModule, FormsModule],
-  exports: [...Pages],
+  imports: [CommonModule, SharedModule, FormsModule, MatTableModule],
+  exports: [[...Pages]],
 })
 export class PagesModule {}

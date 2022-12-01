@@ -1,5 +1,67 @@
 {
-  "users": [],
+  "users": [
+    {
+      "id": 2,
+      "mail": "juba.deisadze@gmail.com",
+      "privateNumber": 12345678,
+      "firstName": "lasha",
+      "lastName": "deisadze",
+      "date": "28/02/1990",
+      "category": "doctor",
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "mail": "lasha.deisadze@gmail.com",
+      "privateNumber": 12345678,
+      "firstName": "lasha",
+      "lastName": "deisadze",
+      "date": "28/02/1990",
+      "category": "doctor",
+      "status": "active"
+    },
+    {
+      "id": 4,
+      "mail": "dato.deisadze@gmail.com",
+      "privateNumber": 12345678,
+      "firstName": "lasha",
+      "lastName": "deisadze",
+      "date": "28/02/1990",
+      "category": "doctor",
+      "status": "active"
+    },
+    {
+      "id": 5,
+      "mail": "rezo.deisadze@gmail.com",
+      "privateNumber": 12345678,
+      "firstName": "lasha",
+      "lastName": "deisadze",
+      "date": "28/02/1990",
+      "category": "doctor",
+      "status": "active"
+    },
+    {
+      "id": 6,
+      "mail": "nukri.deisadze@gmail.com",
+      "privateNumber": 12345678,
+      "firstName": "lasha",
+      "lastName": "deisadze",
+      "date": "28/02/1990",
+      "category": "doctor",
+      "status": "active"
+    },
+    {
+      "id": 7,
+      "mail": "kote.deisadze@gmail.com",
+      "privateNumber": 12345678,
+      "firstName": "lasha",
+      "lastName": "deisadze",
+      "date": "28/02/1990",
+      "category": "doctor",
+      "status": "active"
+    }
+  ],
+  "user-details": [],
   "categories": [
     {
       "id": 1,
@@ -40,28 +102,20 @@
     {
       "name": "tokio",
       "id": 12
+    },
+    {
+      "name": "სდფდსფ",
+      "id": 13
+    },
+    {
+      "name": "wer",
+      "id": 14
     }
   ],
   "statuses": [
     {
-      "name": "injineri",
-      "id": 3
-    },
-    {
-      "name": "kbilis eqimi",
-      "id": 4
-    },
-    {
-      "id": 5,
-      "name": "mkurnali"
-    },
-    {
       "name": "vachari",
       "id": 6
-    },
-    {
-      "name": "leopardi",
-      "id": 7
     },
     {
       "name": "kikoo",
@@ -74,6 +128,18 @@
     {
       "name": "istagrami",
       "id": 10
+    },
+    {
+      "name": "asdsad",
+      "id": 11
+    },
+    {
+      "name": "asdsad",
+      "id": 12
+    },
+    {
+      "name": "bbb",
+      "id": 14
     }
   ]
 }
