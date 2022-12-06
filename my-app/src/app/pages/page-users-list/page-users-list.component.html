@@ -1,1 +1,124 @@
-<h1>Page Users</h1>
+<section class="users-list-wrapper">
+  <button (click)="onShowAll()" class="btn btn-primary">
+    Reset Filters / Show All
+  </button>
+  <div class="users-list-filters">
+    <div class="filter-by">
+      <input
+        #byEmail
+        type="text"
+        [(ngModel)]="emailValue"
+        id="byEmail"
+        (keyup)="onInputFocus(byEmail)"
+        placeholder="By Email"
+      />
+    </div>
+    <div class="filter-by">
+      <input
+        #byPrivateNumber
+        type="number"
+        id="byPrivateNumber"
+        [(ngModel)]="privateNumberValue"
+        (keyup)="onInputFocus(byPrivateNumber)"
+        placeholder="By Private Number"
+      />
+
+      <mat-icon class="search-btn" (click)="onPrivateNumberSearch()"
+        >search</mat-icon
+      >
+    </div>
+    <div class="filter-by">
+      <input
+        #byFirstName
+        type="text"
+        [(ngModel)]="firstNameValue"
+        id="byFirstName"
+        (keyup)="onInputFocus(byFirstName)"
+        placeholder="By First Name"
+      />
+    </div>
+    <div class="filter-by">
+      <input
+        #byLastName
+        type="text"
+        [(ngModel)]="lastNameValue"
+        id="byLastName"
+        (keyup)="onInputFocus(byLastName)"
+        placeholder="By Last Name"
+      />
+    </div>
+    <div class="filter-by">
+      <input
+        #byCategory
+        type="text"
+        id="byCategory"
+        placeholder="By Category"
+        [(ngModel)]="categoryValue"
+        (keyup)="onInputFocus(byCategory)"
+      />
+      <mat-icon class="search-btn" (click)="onCategorySearch()"
+        >search</mat-icon
+      >
+    </div>
+    <div class="filter-by">
+      <input
+        #byStatus
+        type="text"
+        id="byStatus"
+        placeholder="By Status"
+        [(ngModel)]="statusValue"
+        (keyup)="onInputFocus(byStatus)"
+      />
+      <mat-icon class="search-btn" (click)="onStatusSearch()">search</mat-icon>
+    </div>
+  </div>
+  <div class="add-user-btn">
+    <button class="btn btn-success" (click)="onAddUser()">Add User</button>
+  </div>
+  <div class="users-list-table">
+    <table class="table table-bordered">
+      <thead>
+        <tr class="table-row">
+          <th scope="col">#</th>
+          <th scope="col">E-Mail</th>
+          <th scope="col">Private Number</th>
+          <th scope="col">FirstName</th>
+          <th scope="col">LastName</th>
+          <th scope="col">Date</th>
+          <th scope="col">Category</th>
+          <th scope="col">Status</th>
+          <th scope="col">Edit</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr
+          *ngFor="
+            let item of usersList | searchfilter : searchValue;
+            let i = index
+          "
+        >
+          <th scope="row">{{ i + 1 }}</th>
+          <td>{{ item.mail }}</td>
+          <td>{{ item.privateNumber }}</td>
+          <td>{{ item.firstName }}</td>
+          <td>{{ item.lastName }}</td>
+          <td>{{ item.date }}</td>
+          <td>{{ item.category }}</td>
+          <td>{{ item.status }}</td>
+          <td>
+            <button class="btn btn-warning" (click)="onUserEdit(item)">
+              Edit
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-danger" (click)="onDeleteUser(item.id)">
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
