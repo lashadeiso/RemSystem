@@ -1,0 +1,54 @@
+.users-list-wrapper {
+  width: 80vw;
+  height: 80vh;
+  margin: 5vh auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.btn-primary,
+.btn-success {
+  margin-bottom: 3vh;
+  width: 10vw;
+}
+.users-list-filters {
+  height: 15vh;
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  gap: 2vw;
+}
+
+.filter-by {
+  height: 3vh;
+  display: flex;
+  gap: 0.1vw;
+}
+.filter-by input {
+  font-size: 2vh;
+  width: 10vw;
+}
+.filter-by input::placeholder {
+  font-size: 1.5vh;
+}
+
+.search-btn {
+  height: 3vh;
+  width: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.1vh;
+  border: 1px solid rgb(116, 113, 113);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.search-btn:hover {
+  background-color: rgb(227, 243, 231);
+}
+
+.users-list-table {
+  height: 60vh;
+  overflow-y: scroll;
+}

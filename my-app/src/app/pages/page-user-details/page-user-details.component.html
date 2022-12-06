@@ -1,0 +1,107 @@
+<section class="user-details">
+  <form (ngSubmit)="ngFormSubmit(ourForm)" #ourForm="ngForm">
+    <h1>{{ clickEditBTN ? "Update User Information" : "Add User " }}</h1>
+
+    <div class="form-group" style="display: none">
+      <label for="">Id</label>
+      <input name="id" ngModel type="number" />
+    </div>
+
+    <div class="form-group">
+      <label for="">E-Mail</label>
+      <input
+        name="mail"
+        ngModel
+        type="text"
+        placeholder="Enter here"
+        class="form-control"
+        pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-z]+)$"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="">Private Number</label>
+      <input
+        name="privateNumber"
+        ngModel
+        type="number"
+        placeholder="Enter here"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="">First Name</label>
+      <input
+        name="firstName"
+        ngModel
+        type="text"
+        placeholder="Enter here"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="">Last Name</label>
+      <input
+        name="lastName"
+        ngModel
+        type="text"
+        placeholder="Enter here"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="">Date</label>
+      <input
+        name="date"
+        ngModel
+        type="date"
+        placeholder="Enter here"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="">Category</label>
+
+      <select
+        class="form-select"
+        aria-label="Default select example"
+        name="category"
+        ngModel
+        required
+      >
+        <option *ngFor="let item of categoryList" [ngValue]="item.name">
+          {{ item.name }}
+        </option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="">Status</label>
+      <select
+        class="form-select"
+        aria-label="Default select example"
+        name="status"
+        ngModel
+        required
+      >
+        <option *ngFor="let item of statusList" [ngValue]="item.name">
+          {{ item.name }}
+        </option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <button
+        type="submit"
+        class="btn btn-dark col-md-12 d-block"
+        [disabled]="!ourForm.valid"
+      >
+        {{ clickEditBTN ? "Save" : "Add" }}
+      </button>
+    </div>
+  </form>
+</section>

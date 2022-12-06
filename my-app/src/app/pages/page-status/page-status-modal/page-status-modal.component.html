@@ -1,0 +1,59 @@
+Modal
+<div
+  [ngClass]="{ showmodal: showModal }"
+  class="modal fade"
+  id="staticBackdrop"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">
+          {{ clickUpdateBTN ? "Update Status" : "Add Status" }}
+        </h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+          (click)="onShowMoadl()"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <input
+          #addStatusValue
+          type="text"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Enter here"
+          [value]="getInputData()"
+        />
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          (click)="onShowMoadl()"
+          data-bs-dismiss="modal"
+        >
+          Close
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          (click)="
+            clickUpdateBTN
+              ? onUpdateStatus(addStatusValue)
+              : onAddStatus(addStatusValue)
+          "
+        >
+          {{ clickUpdateBTN ? "Save" : "Add" }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

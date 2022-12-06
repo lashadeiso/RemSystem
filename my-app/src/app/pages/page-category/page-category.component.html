@@ -1,0 +1,42 @@
+<section class="categorys">
+  <div class="filter-contains">
+    <app-filter-contains
+      (filterValueEmmitter)="onInputValue($event)"
+    ></app-filter-contains>
+
+    <button type="button" class="btn btn-success" (click)="onShowMoadl()">
+      Add Category
+    </button>
+  </div>
+
+  <div class="container categorys-wrapper">
+    <div
+      class="category-item"
+      *ngFor="let item of pageSlice | filter: inputValue"
+    >
+      <span>{{ item.name | titlecase }}</span>
+      <div class="category-item-buttons">
+        <button class="btn btn-warning" (click)="onUpdateCategory(item)">
+          Update
+        </button>
+        <button class="btn btn-danger" (click)="onDeleteCategory(item.id)">
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+  <app-pagination
+    [itemsList]="categoriesList"
+    (startIndexEmitter)="onStartIndexEmitter($event)"
+    (endIndexEmitter)="onEndIndexEmitter($event)"
+    (pageSliceEmitter)="onPageSliceEmitter($event)"
+  ></app-pagination>
+</section>
+
+<app-page-category-modal
+  [showModal]="showModal"
+  (showModalEmitter)="onShowModalSubscriber($event)"
+  [clickUpdateBTN]="clickUpdateBTN"
+  [updateValue]="updateValue"
+  [currentUpdateItemId]="currentUpdateItemId"
+></app-page-category-modal>

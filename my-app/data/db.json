@@ -1,0 +1,150 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "mail": "lasha.deisadze@gmail.com",
+      "privateNumber": 60001121939,
+      "firstName": "lasha",
+      "lastName": "deisadze",
+      "date": "2022-12-22",
+      "category": "developer",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "mail": "shota.rustaveli@yahoo.com",
+      "privateNumber": 6000124578,
+      "firstName": "shota",
+      "lastName": "rustaveli",
+      "date": "2022-11-03",
+      "category": "writer",
+      "status": "disabled"
+    },
+    {
+      "id": 3,
+      "mail": "zaal.udumashvili@mail.ru",
+      "privateNumber": 4512786621,
+      "firstName": "zaal",
+      "lastName": "udumashvili",
+      "date": "2020-06-20",
+      "category": "jurnalist",
+      "status": "active"
+    },
+    {
+      "id": 4,
+      "mail": "irakli.charkviani@edu.ge",
+      "privateNumber": 213456789,
+      "firstName": "irakli",
+      "lastName": "charkviani",
+      "date": "2022-08-12",
+      "category": "singer",
+      "status": "deactive"
+    },
+    {
+      "id": 5,
+      "mail": "chabua.amirejibi@gov.ge",
+      "privateNumber": 5457871245,
+      "firstName": "chabua",
+      "lastName": "amirejibi",
+      "date": "2022-10-05",
+      "category": "writer",
+      "status": "disabled"
+    },
+    {
+      "id": 6,
+      "mail": "manuchar.kvirkvelia@gmail.com",
+      "privateNumber": 45678912345,
+      "firstName": "manuchar",
+      "lastName": "kvirkvelia",
+      "date": "2022-06-07",
+      "category": "sportsmen",
+      "status": "in progress"
+    },
+    {
+      "id": 7,
+      "mail": "noe.zhordania@yahoo.com",
+      "privateNumber": 1234512345,
+      "firstName": "noe",
+      "lastName": "zhordania",
+      "date": "2022-08-11",
+      "category": "politican",
+      "status": "closed"
+    }
+  ],
+  "categories": [
+    {
+      "name": "doctor",
+      "id": 1
+    },
+    {
+      "name": "engineer",
+      "id": 2
+    },
+    {
+      "name": "fireman",
+      "id": 3
+    },
+    {
+      "name": "sportsmen",
+      "id": 4
+    },
+    {
+      "name": "accountant",
+      "id": 5
+    },
+    {
+      "name": "dentist",
+      "id": 6
+    },
+    {
+      "name": "manager",
+      "id": 7
+    },
+    {
+      "id": 8,
+      "name": "lawyer"
+    },
+    {
+      "name": "developer",
+      "id": 9
+    },
+    {
+      "name": "writer",
+      "id": 10
+    },
+    {
+      "name": "jurnalist",
+      "id": 11
+    },
+    {
+      "name": "singer",
+      "id": 12
+    },
+    {
+      "name": "politican",
+      "id": 13
+    }
+  ],
+  "statuses": [
+    {
+      "name": "active",
+      "id": 1
+    },
+    {
+      "name": "deactive",
+      "id": 2
+    },
+    {
+      "name": "in progress",
+      "id": 3
+    },
+    {
+      "name": "disabled",
+      "id": 4
+    },
+    {
+      "name": "closed",
+      "id": 5
+    }
+  ]
+}
