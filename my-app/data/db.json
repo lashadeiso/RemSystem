@@ -1,34 +1,74 @@
 {
   "users": [
     {
-      "id": 2,
-      "mail": "shota.rustaveli@yahoo.com",
-      "privateNumber": 6000124578,
-      "firstName": "shota",
-      "lastName": "rustaveli",
-      "date": "2022-11-03",
-      "category": "writer",
-      "status": "disabled"
-    },
-    {
-      "id": 3,
-      "mail": "zaal.udumashvili@mail.ru",
-      "privateNumber": 4512786621,
-      "firstName": "zaal",
-      "lastName": "udumashvili",
-      "date": "2020-06-20",
-      "category": "jurnalist",
+      "id": 1,
+      "mail": "lasha.deisadze@gmail.com",
+      "privateNumber": 60001121512,
+      "firstName": "lasha",
+      "lastName": "deisadze",
+      "date": "2022-06-09",
+      "category": "developer",
       "status": "active"
     },
     {
+      "id": 2,
+      "mail": "kvicha.kvaratskhelia@yahoo.com",
+      "privateNumber": 6000123456,
+      "firstName": "kvicha",
+      "lastName": "kvaratskhelia",
+      "date": "2022-06-30",
+      "category": "sportsmen",
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "mail": "elene.khoshtaria@mail.ru",
+      "privateNumber": 123412036,
+      "firstName": "elene",
+      "lastName": "khoshtaria",
+      "date": "2022-12-21",
+      "category": "politican",
+      "status": "active"
+    },
+    {
+      "id": 4,
+      "mail": "irakli.chrakviani@edu.ge",
+      "privateNumber": 600451245,
+      "firstName": "irakli",
+      "lastName": "charkviani",
+      "date": "2022-12-10",
+      "category": "singer",
+      "status": "deactive"
+    },
+    {
       "id": 5,
-      "mail": "chabua.amirejibi@gov.ge",
-      "privateNumber": 5457871245,
-      "firstName": "chabua",
-      "lastName": "amirejibi",
-      "date": "2022-10-05",
+      "mail": "akaki.tsereteli@gov.ge",
+      "privateNumber": 789456789,
+      "firstName": "akaki",
+      "lastName": "tsereteli",
+      "date": "2022-12-23",
       "category": "writer",
       "status": "disabled"
+    },
+    {
+      "id": 6,
+      "mail": "nanuka.kiladze@doc.ge",
+      "privateNumber": 4567891235,
+      "firstName": "6000145798",
+      "lastName": "nanuka",
+      "date": "2022-06-03",
+      "category": "doctor",
+      "status": "closed"
+    },
+    {
+      "id": 7,
+      "mail": "giorgi.vadachkoria@gmail.com",
+      "privateNumber": 456465879,
+      "firstName": "giorgi",
+      "lastName": "vadachkoria",
+      "date": "2022-08-18",
+      "category": "fireman",
+      "status": "in progress"
     }
   ],
   "categories": [
