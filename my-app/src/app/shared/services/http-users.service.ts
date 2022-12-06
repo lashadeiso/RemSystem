@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, Subject, tap } from 'rxjs';
 import { environment } from 'src/environments/environment';
@@ -48,5 +48,37 @@ export class HttpUsersService {
         }
       })
     );
+  }
+
+  addUser(userItem: User): Observable<any> {
+    let headers = new HttpHeaders({ 'content-type': 'application/json' });
+    return this.http
+      .post(`${environment.baseUrl}/users`, userItem, {
+        headers: headers,
+      })
+      .pipe(
+        tap((res) => {
+          if (res) {
+            Swal.fire('Good job!', 'Added successfully!', 'success');
+          }
+        })
+      );
+  }
+
+  updateUserItem(userId: number, userItem: User): Observable<any> {
+    let apiUrl: string = `${environment.baseUrl}/users/${userId}`;
+    let headers = new HttpHeaders({ 'content-type': 'application/json' });
+    return this.http.put(apiUrl, userItem, { headers: headers }).pipe(
+      tap((res) => {
+        if (res) {
+          Swal.fire('Good job!', 'Added successfully!', 'success');
+        }
+      })
+    );
+  }
+
+  getUserById(userId: number): Observable<any> {
+    let apiUrl: string = `${environment.baseUrl}/users/${userId}`;
+    return this.http.get(apiUrl);
   }
 }

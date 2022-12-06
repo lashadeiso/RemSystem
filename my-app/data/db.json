@@ -1,145 +1,150 @@
 {
   "users": [
     {
-      "id": 2,
-      "mail": "juba.deisadze@gmail.com",
-      "privateNumber": 12345678,
+      "id": 1,
+      "mail": "lasha.deisadze@gmail.com",
+      "privateNumber": 60001121939,
       "firstName": "lasha",
       "lastName": "deisadze",
-      "date": "28/02/1990",
-      "category": "doctor",
+      "date": "2022-12-22",
+      "category": "developer",
       "status": "active"
     },
     {
+      "id": 2,
+      "mail": "shota.rustaveli@yahoo.com",
+      "privateNumber": 6000124578,
+      "firstName": "shota",
+      "lastName": "rustaveli",
+      "date": "2022-11-03",
+      "category": "writer",
+      "status": "disabled"
+    },
+    {
       "id": 3,
-      "mail": "lasha.deisadze@gmail.com",
-      "privateNumber": 12345678,
-      "firstName": "lasha",
-      "lastName": "deisadze",
-      "date": "28/02/1990",
-      "category": "doctor",
+      "mail": "zaal.udumashvili@mail.ru",
+      "privateNumber": 4512786621,
+      "firstName": "zaal",
+      "lastName": "udumashvili",
+      "date": "2020-06-20",
+      "category": "jurnalist",
       "status": "active"
     },
     {
       "id": 4,
-      "mail": "dato.deisadze@gmail.com",
-      "privateNumber": 12345678,
-      "firstName": "lasha",
-      "lastName": "deisadze",
-      "date": "28/02/1990",
-      "category": "doctor",
-      "status": "active"
+      "mail": "irakli.charkviani@edu.ge",
+      "privateNumber": 213456789,
+      "firstName": "irakli",
+      "lastName": "charkviani",
+      "date": "2022-08-12",
+      "category": "singer",
+      "status": "deactive"
     },
     {
       "id": 5,
-      "mail": "rezo.deisadze@gmail.com",
-      "privateNumber": 12345678,
-      "firstName": "lasha",
-      "lastName": "deisadze",
-      "date": "28/02/1990",
-      "category": "doctor",
-      "status": "active"
+      "mail": "chabua.amirejibi@gov.ge",
+      "privateNumber": 5457871245,
+      "firstName": "chabua",
+      "lastName": "amirejibi",
+      "date": "2022-10-05",
+      "category": "writer",
+      "status": "disabled"
     },
     {
       "id": 6,
-      "mail": "nukri.deisadze@gmail.com",
-      "privateNumber": 12345678,
-      "firstName": "lasha",
-      "lastName": "deisadze",
-      "date": "28/02/1990",
-      "category": "doctor",
-      "status": "active"
+      "mail": "manuchar.kvirkvelia@gmail.com",
+      "privateNumber": 45678912345,
+      "firstName": "manuchar",
+      "lastName": "kvirkvelia",
+      "date": "2022-06-30",
+      "category": "sportsmen",
+      "status": "in progress"
     },
     {
       "id": 7,
-      "mail": "kote.deisadze@gmail.com",
-      "privateNumber": 12345678,
-      "firstName": "lasha",
-      "lastName": "deisadze",
-      "date": "28/02/1990",
-      "category": "doctor",
-      "status": "active"
+      "mail": "noe.zhordania@yahoo.com",
+      "privateNumber": 1234512345,
+      "firstName": "noe",
+      "lastName": "zhordania",
+      "date": "2022-08-11",
+      "category": "politican",
+      "status": "closed"
     }
   ],
-  "user-details": [],
   "categories": [
     {
-      "id": 1,
-      "name": "nukri"
+      "name": "doctor",
+      "id": 1
     },
     {
-      "name": "juba",
+      "name": "engineer",
       "id": 2
     },
     {
-      "id": 3,
-      "name": "lasha"
+      "name": "fireman",
+      "id": 3
     },
     {
-      "id": 5,
-      "name": "vanichka"
+      "name": "sportsmen",
+      "id": 4
     },
     {
-      "id": 6,
-      "name": "tedo"
+      "name": "accountant",
+      "id": 5
     },
     {
-      "name": "lika",
+      "name": "dentist",
+      "id": 6
+    },
+    {
+      "name": "manager",
       "id": 7
     },
     {
-      "id": 9,
-      "name": "babua"
+      "id": 8,
+      "name": "lawyer"
     },
     {
-      "name": "kako",
+      "name": "developer",
+      "id": 9
+    },
+    {
+      "name": "writer",
       "id": 10
     },
     {
-      "name": "lisaboni",
+      "name": "jurnalist",
       "id": 11
     },
     {
-      "name": "tokio",
+      "name": "singer",
       "id": 12
     },
     {
-      "name": "სდფდსფ",
+      "name": "politican",
       "id": 13
-    },
-    {
-      "name": "wer",
-      "id": 14
     }
   ],
   "statuses": [
     {
-      "name": "vachari",
-      "id": 6
+      "name": "active",
+      "id": 1
     },
     {
-      "name": "kikoo",
-      "id": 8
+      "name": "deactive",
+      "id": 2
     },
     {
-      "name": "vehsapi",
-      "id": 9
+      "name": "in progress",
+      "id": 3
     },
     {
-      "name": "istagrami",
-      "id": 10
+      "name": "disabled",
+      "id": 4
     },
     {
-      "name": "asdsad",
-      "id": 11
-    },
-    {
-      "name": "asdsad",
-      "id": 12
-    },
-    {
-      "name": "bbb",
-      "id": 14
+      "name": "closed",
+      "id": 5
     }
   ]
 }
