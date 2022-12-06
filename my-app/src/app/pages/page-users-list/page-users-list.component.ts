@@ -47,7 +47,7 @@ export class PageUsersListComponent implements OnInit, OnDestroy {
   }
 
   onDeleteUser(id: number) {
-    this.http.deleteUser(id).subscribe();
+    this.http.deleteUser(id);
   }
   ngOnDestroy(): void {
     this.userItem$.unsubscribe();

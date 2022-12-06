@@ -23,31 +23,34 @@ export class HttpUsersService {
     );
   }
 
-  deleteUser(id: number): Observable<any> {
-    return this.http.delete(`${environment.baseUrl}/users/${id}`).pipe(
-      tap((res) => {
-        if (res) {
-          Swal.fire({
-            title: 'Are you sure?',
-            text: "You won't be able to revert this!",
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, delete it!',
-          }).then((result) => {
-            if (result.isConfirmed) {
-              let index = this.usersList
-                .map((item: any) => item.id)
-                .indexOf(id);
-              this.usersList.splice(index, 1);
-              this.userItem$.next(this.usersList);
-              Swal.fire('Deleted!', 'Your file has been deleted.', 'success');
-            }
-          });
-        }
-      })
-    );
+  deleteUser(id: number) {
+    Swal.fire({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, delete it!',
+    }).then((result) => {
+      if (result.isConfirmed) {
+        return this.http
+          .delete(`${environment.baseUrl}/users/${id}`)
+          .pipe(
+            tap((res) => {
+              if (res) {
+                let index = this.usersList
+                  .map((item: any) => item.id)
+                  .indexOf(id);
+                this.usersList.splice(index, 1);
+                this.userItem$.next(this.usersList);
+                Swal.fire('Deleted!', 'Your file has been deleted.', 'success');
+              }
+            })
+          )
+          .subscribe();
+      } else return;
+    });
   }
 
   addUser(userItem: User): Observable<any> {
