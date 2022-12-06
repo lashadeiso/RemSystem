@@ -55,4 +55,14 @@ json-server --watch data/db.json --port 8000
 -	სტატუსი (dropdown)
 
 
+აპლიკაციის შექმნის წესები:
+
+-	აპლიკაცია უნდა შეიქმნას Angular 11+ Framework-ზე
+-	უნდა გამოიყენოთ Angular Modules
+-	უნდა გამოიყენოთ Angular Routing
+-	უნდა გამოიყენოთ Angular Forms (Template Driven ან Reactive, თქვენი გემოვნებით)
+-	ყურადღებას მივაქცევთ ვიზუალურ მხარესაც: შეგიძლიათ შექმნათ თქვენი კომპონენტები (ჩაითვლება უპირატესობად - Inputs, Button etc.) ან გამოიყენოთ ანგულარის UI Library-ებიდან რომელიმე, მაგ: Primeng, Angular Material, NGX Bootstrap ან ნებისმიერი თქვენი გემოვნებით
+- მონაცემები უნდა შეინახოთ სერვერზე, შესაბამისად მოგიწევთ Angular HttpClient-ის გამოყენებით REST API-სთან მუშაობა. შეარჩიეთ თქვენი გემოვნებით: რომელიმე Mock Server, JSON Server (npm), 
+
+
 
