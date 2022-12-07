@@ -32,7 +32,6 @@ json-server --watch data/db.json --port 8000
 -	პირადი ნომერი (equals)
 -	სახელი (contains)
 -	გვარი (contains)
--	დაბადების თარიღი (დაწყების თარიღი - დამთავრების თარიღი)
 -	კატეგორია (equals)
 -	სტატუსი (equals)
 - ცხრილის ნაწილი
